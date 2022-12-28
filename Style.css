@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(rgb(39, 44, 53), rgb(12, 14, 18));
+    color: rgb(112, 112, 112);
+    height: 98vh;
+}
+
+.barra{
+    position: relative;
+    width: 100.7%;
+    height: 4.375rem;
+    background-color: rgb(12, 14, 18);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    z-index: 100;
+    margin-top: -0.4375rem;
+    margin-left: -0.4375rem;
+}
+
+.barra-sombra{
+    position: absolute;
+    width: 99.8%;
+    height: 4.5rem;
+    margin-top: -4.375rem;
+    margin-left: -0.5rem;
+    z-index: 90;
+    background-image: linear-gradient(to right, rgba(0,0,0,0)/*rgb(12, 14, 18)*/, rgb(13, 70, 223));
+}
+
+.barra__centro{
+    align-items: center;
+}
+
+.barra-derecha__perfil{
+    padding: 0.9rem;
+}
+
+.perfil__img{
+    align-items: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50% ;
+    object-fit: cover;
+}
+
+.barra-centro__nombre{
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+.cuerpo-contenido__biografia{
+    align-items: flex-end;
+    display: flex;
+
+
+}
+
+.cuerpo-contenido-biografia__forma{
+    background-color: rgb(12, 14, 18);
+    height: 12rem;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 17rem;
+    margin-bottom: 2.3rem;
+    margin-left: -8px;
+    clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
+    z-index: 100;
+}
+
+.cuerpo-contenido-biografia__sombra{
+    position: absolute;
+    background-color: rgb(13, 70, 223);
+    height: 16rem;
+    width: 59.5rem;
+    margin-bottom: 2.3rem;
+    margin-left: -0.5rem;
+    clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
+    z-index: 90;
+}
+
+.cuerpo-contenido-biografia__forma h3{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+.texto-biografia{
+    margin-bottom: 2rem;
+    
+}
+
+.cuerpo-biografia-biografia__img{
+    width: 30rem;
+}
+
+
+
+
+.cuerpo-contenido-formacion__forma{
+    background-color: aquamarine;
+
+}
+
+
+
+
+
+
+
+.ver_mas{
+    position: relative;
+    color:rgb(112, 112, 112)
+}
+
+.parrafo{
+    font-size: 15px;
+}
+
+
+.link-contacto{
+    text-decoration: none;
+    color:rgb(112, 112, 112)
+} 
