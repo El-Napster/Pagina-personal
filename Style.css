@@ -104,6 +104,7 @@ h3{
 
 .cuerpo-biografia-biografia__img{
     width: 30rem;
+    z-index: 110;
 }
 
 
