@@ -71,10 +71,11 @@ h3{
 
 .cuerpo-contenido-biografia__forma{
     background-color: rgb(12, 14, 18);
+    width: 40.68vw;
     height: 12rem;
     padding: 2rem;
     padding-left: 5rem;
-    padding-right: 17rem;
+    padding-right: 20%;
     margin-bottom: 2.3rem;
     margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
@@ -85,7 +86,7 @@ h3{
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
-    width: 58.57rem;
+    width: 65.07vw;
     margin-bottom: 2.3rem;
     margin-left: -0.5rem;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
@@ -121,7 +122,7 @@ h3{
 
 .cuerpo-contenido-formacion__forma{ 
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 98%);
-    width: 33.56rem;
+    width: 40.68vw;
     text-align: right;
     background-color: rgb(12, 14, 18);
     height: 12rem;
@@ -136,7 +137,7 @@ h3{
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
-    width: 58.57rem;
+    width: 68.4vw;
     margin-bottom: 2.3rem;
     margin-right: -0.5rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
