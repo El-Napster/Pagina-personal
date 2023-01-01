@@ -5,7 +5,7 @@ body{
     height: 98vh;
 }
 
-h3{
+.titulo-h3{
     font-size: 1.7rem;
     margin-top: 1rem;
 }
@@ -65,32 +65,53 @@ h3{
 .cuerpo-contenido__biografia{
     align-items:flex-end;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
 
+.cuerpo-contenido-biografia__contenido{
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+    width: 60vw;
+    min-width: 700px;
 }
 
 .cuerpo-contenido-biografia__forma{
     background-color: rgb(12, 14, 18);
-    width: 40.68vw;
+    width: 100%;
     height: 12rem;
+    clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
     padding: 2rem;
-    padding-left: 5rem;
-    padding-right: 20%;
+    padding-left: 3vw;
+    padding-right: 25vw;
+    z-index: 100;
     margin-bottom: 2.3rem;
     margin-left: -8px;
-    clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
-    z-index: 100;
 }
 
 .cuerpo-contenido-biografia__sombra{
     position: absolute;
     background-color: rgb(13, 70, 223);
+    width: 60.56vw;
     height: 16rem;
-    width: 65.07vw;
     margin-bottom: 2.3rem;
-    margin-left: -0.5rem;
+    margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
+    min-width: 708px;
+}
+
+.cuerpo-contenido-biografia-div__img{
+    z-index: 150;
+    min-width: 700px;
+}
+
+.cuerpo-biografia-biografia__img{
+    width: 30vw;
+    min-width: 400px;
+    z-index: 150;
+    object-fit: cover;
 }
 
 .cuerpo-contenido-biografia__forma h3{
@@ -98,15 +119,9 @@ h3{
     margin-top: 1rem;
 }
 
-.texto-biografia{
-    margin-bottom: 2rem;
-    
-}
 
-.cuerpo-biografia-biografia__img{
-    width: 30rem;
-    z-index: 150;
-}
+
+
 
 
 
@@ -115,33 +130,46 @@ h3{
 
 
 .cuerpo-contenido__formacion{
-    display: flex;
     justify-content: flex-end;
-    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+
+.cuerpo-contenido-formacion__contenido{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 60vw;
+    min-width: 700px;
 }
 
 .cuerpo-contenido-formacion__forma{ 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 98%);
-    width: 40.68vw;
-    text-align: right;
     background-color: rgb(12, 14, 18);
+    width: 100%;
     height: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 98%);
+    text-align: right;
     padding: 2rem;
-    padding-left: 20rem;
-    padding-right: 5rem;
-    margin-right: -8px;
+    padding-right: 3vw;
+    padding-left: 25vw;
     z-index: 100;
+    margin-bottom: 2.3rem;
+    margin-right: -8px;
+
 }
 
 .cuerpo-contenido-formacion__sombra{
     position: absolute;
     background-color: rgb(13, 70, 223);
+    width: 60.56vw;
     height: 16rem;
-    width: 68.4vw;
     margin-bottom: 2.3rem;
-    margin-right: -0.5rem;
+    margin-right: -8px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
     z-index: 90;
+    min-width: 708px;
 }
 
 
@@ -153,12 +181,11 @@ h3{
 
 .ver_mas{
     position: relative;
-    color:rgb(112, 112, 112)
+    color:rgb(112, 112, 112);
 }
 
 .parrafo{
     font-size: 0.9rem;
-    margin-bottom: 2rem;
 }
 
 
