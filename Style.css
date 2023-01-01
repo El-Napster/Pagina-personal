@@ -86,7 +86,7 @@ body{
     clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
     padding: 2rem;
     padding-left: 3vw;
-    padding-right: 25vw;
+    padding-right: 20vw;
     z-index: 100;
     margin-bottom: 2.3rem;
     margin-left: -8px;
@@ -123,6 +123,9 @@ body{
     margin-top: 1rem;
 }
 
+.texto-biografia{
+    margin-bottom: 2rem;
+}
 
 
 
@@ -136,7 +139,7 @@ body{
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 5rem;
     justify-content: space-between;
 }
 
@@ -157,7 +160,7 @@ body{
     text-align: right;
     padding: 2rem;
     padding-right: 3vw;
-    padding-left: 25vw;
+    padding-left: 20vw;
     z-index: 100;
     margin-bottom: 2.3rem;
     margin-right: -8px;
@@ -207,7 +210,7 @@ body{
     clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
     padding: 2rem;
     padding-left: 3vw;
-    padding-right: 25vw;
+    padding-right: 20vw;
     z-index: 100;
     margin-bottom: 2.3rem;
     margin-left: -8px;
@@ -256,7 +259,7 @@ body{
     text-align: right;
     padding: 2rem;
     padding-right: 3vw;
-    padding-left: 25vw;
+    padding-left: 20vw;
     z-index: 100;
     margin-bottom: 2.3rem;
     margin-right: -8px;
@@ -285,7 +288,9 @@ body{
 
 
 .formas-todo{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    height: 360px;
+    align-items: center;
 }
 
 .ver_mas{
