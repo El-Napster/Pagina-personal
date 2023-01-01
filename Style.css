@@ -2,13 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(rgb(39, 44, 53), rgb(12, 14, 18));
     color: rgb(112, 112, 112);
-    height: 98vh;
 }
 
 .titulo-h3{
     font-size: 1.7rem;
     margin-top: 1rem;
 }
+
 
 
 
@@ -34,7 +34,7 @@ body{
     margin-top: -4.375rem;
     margin-left: -0.5rem;
     z-index: 90;
-    background-image: linear-gradient(to right, rgba(0,0,0,0)/*rgb(12, 14, 18)*/, rgb(13, 70, 223));
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgb(13, 70, 223));
 }
 
 .barra__centro{
@@ -62,11 +62,13 @@ body{
 
 
 
+
 .cuerpo-contenido__biografia{
     align-items:flex-end;
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
+    justify-content: space-between;
 }
 
 .cuerpo-contenido-biografia__contenido{
@@ -103,15 +105,16 @@ body{
 }
 
 .cuerpo-contenido-biografia-div__img{
-    z-index: 150;
-    min-width: 700px;
+    z-index: 150;   
+    object-fit: cover;
+    overflow: visible;
 }
 
 .cuerpo-biografia-biografia__img{
-    width: 30vw;
-    min-width: 400px;
+    width: 400px;
     z-index: 150;
     object-fit: cover;
+    overflow: visible;
 }
 
 .cuerpo-contenido-biografia__forma h3{
@@ -128,12 +131,12 @@ body{
 
 
 
-
 .cuerpo-contenido__formacion{
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
+    justify-content: space-between;
 }
 
 
@@ -179,6 +182,110 @@ body{
 
 
 
+
+.cuerpo-contenido__curriculum{
+    align-items:flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.cuerpo-contenido-curriculum__contenido{
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+    width: 60vw;
+    min-width: 700px;
+}
+
+.cuerpo-contenido-curriculum__forma{
+    background-color: rgb(12, 14, 18);
+    width: 100%;
+    height: 12rem;
+    clip-path: polygon(0 0, 100% 0, 57% 98%, 0% 100%);
+    padding: 2rem;
+    padding-left: 3vw;
+    padding-right: 25vw;
+    z-index: 100;
+    margin-bottom: 2.3rem;
+    margin-left: -8px;
+}
+
+.cuerpo-contenido-curriculum__sombra{
+    position: absolute;
+    background-color: rgb(13, 70, 223);
+    width: 60.56vw;
+    height: 16rem;
+    margin-bottom: 2.3rem;
+    margin-left: -8px;
+    clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
+    z-index: 90;
+    min-width: 708px;
+}
+
+
+
+
+
+
+
+.cuerpo-contenido__pasatiempo{
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    justify-content: space-between;
+}
+
+
+.cuerpo-contenido-pasatiempo__contenido{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 60vw;
+    min-width: 700px;
+}
+
+.cuerpo-contenido-pasatiempo__forma{ 
+    background-color: rgb(12, 14, 18);
+    width: 100%;
+    height: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 98%);
+    text-align: right;
+    padding: 2rem;
+    padding-right: 3vw;
+    padding-left: 25vw;
+    z-index: 100;
+    margin-bottom: 2.3rem;
+    margin-right: -8px;
+
+}
+
+.cuerpo-contenido-pasatiempo__sombra{
+    position: absolute;
+    background-color: rgb(13, 70, 223);
+    width: 60.56vw;
+    height: 16rem;
+    margin-bottom: 2.3rem;
+    margin-right: -8px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+    z-index: 90;
+    min-width: 708px;
+}
+
+
+
+
+
+
+
+
+.formas-todo{
+    margin-bottom: 5rem;
+}
+
 .ver_mas{
     position: relative;
     color:rgb(112, 112, 112);
@@ -189,7 +296,34 @@ body{
 }
 
 
+
+
+
+
+.pie{
+    height: 10rem;
+    width: 100.6%;
+    background-color: rgb(12, 14, 18);
+    margin-bottom: -5px;
+    display: flex;
+    align-items: center;
+
+}
+.pie__contenido{
+   display: flex;
+   margin-left: 10rem;
+   align-items: center;
+}
+
+.links{
+    margin-left: 7rem;
+}
+
 .link-contacto{
-    text-decoration: none;
-    color:rgb(112, 112, 112)
+    position: relative;
+    margin: 10px;
 } 
+
+.link-contacto a{
+    color:rgb(112, 112, 112);
+}
