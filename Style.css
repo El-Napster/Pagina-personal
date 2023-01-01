@@ -54,7 +54,7 @@ body{
 }
 
 .barra-centro__nombre{
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 
 
@@ -76,7 +76,7 @@ body{
     align-items:flex-end;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 700px;
+    min-width: 600px;
 }
 
 .cuerpo-contenido-biografia__forma{
@@ -101,7 +101,7 @@ body{
     margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
-    min-width: 708px;
+    min-width: 608px;
 }
 
 .cuerpo-contenido-biografia-div__img{
@@ -111,7 +111,8 @@ body{
 }
 
 .cuerpo-biografia-biografia__img{
-    width: 400px;
+    width: 30vw;
+    min-width:300px;
     z-index: 150;
     object-fit: cover;
     overflow: visible;
@@ -145,7 +146,7 @@ body{
     align-items:flex-start;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 700px;
+    min-width: 600px;
 }
 
 .cuerpo-contenido-formacion__forma{ 
@@ -172,7 +173,7 @@ body{
     margin-right: -8px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
     z-index: 90;
-    min-width: 708px;
+    min-width: 608px;
 }
 
 
@@ -196,7 +197,7 @@ body{
     align-items:flex-end;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 700px;
+    min-width: 600px;
 }
 
 .cuerpo-contenido-curriculum__forma{
@@ -221,7 +222,7 @@ body{
     margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
-    min-width: 708px;
+    min-width: 608px;
 }
 
 
@@ -235,7 +236,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
-    margin-bottom: 10rem;
     justify-content: space-between;
 }
 
@@ -245,7 +245,7 @@ body{
     align-items:flex-start;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 700px;
+    min-width: 600px;
 }
 
 .cuerpo-contenido-pasatiempo__forma{ 
@@ -272,8 +272,10 @@ body{
     margin-right: -8px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
     z-index: 90;
-    min-width: 708px;
+    min-width: 608px;
 }
+
+
 
 
 
@@ -305,6 +307,7 @@ body{
     width: 100.6%;
     background-color: rgb(12, 14, 18);
     margin-bottom: -5px;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
 
