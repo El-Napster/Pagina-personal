@@ -76,7 +76,7 @@ body{
     align-items:flex-end;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 600px;
+    min-width: 500px;
 }
 
 .cuerpo-contenido-biografia__forma{
@@ -101,7 +101,7 @@ body{
     margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
-    min-width: 608px;
+    min-width: 508px;
 }
 
 .cuerpo-contenido-biografia-div__img{
@@ -124,7 +124,7 @@ body{
 }
 
 .texto-biografia{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
