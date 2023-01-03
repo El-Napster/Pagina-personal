@@ -64,11 +64,10 @@ body{
 
 
 .cuerpo-contenido__biografia{
-    align-items:flex-end;
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
-    justify-content: space-between;
+    /* justify-content: space-between;     */
 }
 
 .cuerpo-contenido-biografia__contenido{
@@ -117,7 +116,7 @@ body{
 }
 
 .cuerpo-biografia-biografia__img{
-    width: 30vw;
+    width: 450px;
     min-width:300px;
     z-index: 150;
     object-fit: cover;
@@ -126,7 +125,7 @@ body{
 }
 
 .cuerpo-biografia-biografia__img:hover{
-    width: 33vw;
+    width: 500px;
     
 }
 .cuerpo-contenido-biografia__forma h3{
