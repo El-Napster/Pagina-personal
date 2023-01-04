@@ -56,6 +56,15 @@ body{
     font-size: 3rem;
 }
 
+.barra-izquierda__menu{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
@@ -93,7 +102,6 @@ body{
 
 .cuerpo-contenido-biografia__forma:hover{
     height: 16.5rem;
-    box-shadow:-120px -120px 200px white;
 }
 
 .cuerpo-contenido-biografia__sombra{
@@ -179,7 +187,6 @@ body{
 
 .cuerpo-contenido-formacion__forma:hover{
     height: 16.5rem;
-    box-shadow:-120px -120px 200px white;
 }
 
 .cuerpo-contenido-formacion__sombra{
@@ -201,6 +208,7 @@ body{
     position: absolute;
     margin-top: -2.3rem;
     margin-left: -10px;
+    z-index: 80;
 }
 
 .cuerpo-contenido-formacion__img{
@@ -253,7 +261,6 @@ body{
 
 .cuerpo-contenido-curriculum__forma:hover{
     height: 16.5rem;
-    box-shadow:-120px -120px 200px white;
 }
 
 .cuerpo-contenido-curriculum__sombra{
@@ -323,7 +330,6 @@ body{
 
 .cuerpo-contenido-pasatiempo__forma:hover{
     height: 16.5rem;
-    box-shadow:-120px -120px 200px white;
 }
 
 .cuerpo-contenido-pasatiempo__sombra{
@@ -345,6 +351,7 @@ body{
     position: absolute;
     margin-top: -2.3rem;
     margin-left: -10px;
+    z-index: 80;
 }
 
 .cuerpo-biografia-pasatiempo__img{
