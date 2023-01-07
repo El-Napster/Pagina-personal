@@ -33,13 +33,50 @@ body{
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgb(13, 70, 223));
 }
 
-.barra__centro{
+.barra__izquierda{
+    display: flex;
     align-items: center;
+    width: 50vw;
+    height: 4.375rem;
+    margin: 0;
+    margin-left: 2rem;
 }
 
-.barra-derecha__perfil{
-    padding: 0.9rem;
+.barra-izquierda__nombre{
+    font-size: 30px;
+    min-width: 200px;
+    margin: 0;
 }
+.barra-izqioerda__link{
+    color:rgb(112, 112, 112);
+    text-decoration: none;
+
+}
+
+
+
+.barra__opciones{
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra__opciones a{
+    color:rgb(112, 112, 112);
+    text-decoration: none;
+    margin-left: 2vw;
+    font-size: 17px;
+}
+
+
+
+.barra__derecha{
+    width: 20vw;
+    display: flex;
+    margin-right: 20px;
+    width: 5vw;
+}
+
 
 .perfil__img{
     align-items: center;
@@ -49,14 +86,12 @@ body{
     object-fit: cover;
 }
 
-.barra-centro__nombre{
-    font-size: 2rem;
-}
 
-.barra-izquierda__menu{
+/* .barra-izquierda__menu{
     margin-left: 20px;
     cursor: pointer;
-}
+} */
+
 
 
 
