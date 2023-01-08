@@ -33,6 +33,18 @@ body{
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgb(13, 70, 223));
 }
 
+
+  
+  header :any-link {
+    text-decoration: none;
+  }
+  
+  header :any-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+
 .barra__izquierda{
     display: flex;
     align-items: center;
@@ -47,13 +59,9 @@ body{
     min-width: 200px;
     margin: 0;
 }
-.barra-izqioerda__link{
+.barra-izquierda__link{
     color:rgb(112, 112, 112);
-    text-decoration: none;
-
 }
-
-
 
 .barra__opciones{
     width: 30vw;
@@ -63,7 +71,6 @@ body{
 
 .barra__opciones a{
     color:rgb(112, 112, 112);
-    text-decoration: none;
     margin-left: 2vw;
     font-size: 17px;
 }
@@ -91,6 +98,8 @@ body{
     margin-left: 20px;
     cursor: pointer;
 } */
+
+
 
 
 
