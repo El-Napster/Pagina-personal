@@ -130,12 +130,40 @@ body{
     margin:0;
 }
 
-.cuerpo-contenido-cabeza__img{
+.parrafo{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.cuerpo-contenido__texto{
+
+}
+
+.cuerpo-contenido-texto__img{
+    border-radius: 10px;
     width: 300px;
     float: right;
 
 }
 
+.cuerpo-contenido-texto-centro__img{
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 750px;
+}
+
+.img_pie{
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.parrafo_4{
+    margin-top: 70px;
+}
+
+.link-referencia{
+    color:  rgb(13, 70, 223);
+}
 
 
 
