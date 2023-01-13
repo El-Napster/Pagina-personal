@@ -69,6 +69,7 @@ body{
 
 
 .barra__opciones{
+    margin-right: -50px;
     width: 30vw;
     display: flex;
     justify-content: flex-end;
@@ -76,7 +77,7 @@ body{
 
 .barra__opciones a{
     color:rgb(112, 112, 112);
-    margin-left: 2vw;
+    margin-left: 1.5vw;
     font-size: 15px;
 }
 
@@ -85,15 +86,15 @@ body{
 .barra__derecha{
     width: 20vw;
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 5vw;
 }
 
 
 .perfil__img{
     align-items: center;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 3.3rem;
+    height: 3.3rem;
     border-radius: 50% ;
     object-fit: cover;
 }

@@ -63,7 +63,10 @@ body{
     color:rgb(112, 112, 112);
 }
 
+
+
 .barra__opciones{
+    margin-right: -50px;
     width: 30vw;
     display: flex;
     justify-content: flex-end;
@@ -71,8 +74,8 @@ body{
 
 .barra__opciones a{
     color:rgb(112, 112, 112);
-    margin-left: 2vw;
-    font-size: 17px;
+    margin-left: 1.5vw;
+    font-size: 15px;
 }
 
 
@@ -80,15 +83,15 @@ body{
 .barra__derecha{
     width: 20vw;
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 5vw;
 }
 
 
 .perfil__img{
     align-items: center;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 3.3rem;
+    height: 3.3rem;
     border-radius: 50% ;
     object-fit: cover;
 }
@@ -118,7 +121,7 @@ body{
 
 .cuerpo-contenido__cabeza{
     align-items: center;
-    height: 12rem; 
+    height: 10rem; 
 }
 
 .cuerpo-contenido-cabeza__h1{
@@ -154,9 +157,6 @@ body{
     font-size: 14px;
 }
 
-.parrafo_4{
-    margin-top: 70px;
-}
 
 .link-referencia{
     color:  rgb(13, 70, 223);
@@ -164,11 +164,28 @@ body{
 
 
 
+li{
+    margin-top: 20px;
+}
+
+.secciones-li{
+    margin-top: 70px;
+}
+
+.habilidades-tecnicas__div{
+    display: flex;
+}
 
 
+.parrafo3_experiencias{
+    display: flex;
+    align-items: center;
+}
 
 
-
+.parrafo3_experiencias h4{
+    width: 250px;
+}
 
 
 
