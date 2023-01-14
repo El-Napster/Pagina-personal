@@ -141,7 +141,8 @@ body{
 
 .cuerpo-contenido-texto__img{
     border-radius: 10px;
-    width: 300px;
+    margin-left: 10px;
+    width: 370px;
     float: right;
 
 }
@@ -150,6 +151,11 @@ body{
     border-radius: 10px;
     margin-top: 40px;
     width: 750px;
+}
+
+
+.img-contenido-pasatiempo{
+    border-radius: 10px;
 }
 
 .img_pie{
@@ -176,7 +182,7 @@ li{
     display: flex;
 }
 
-.parrafo_4{
+.parrafo-x{
     margin-top: 50px;
 
 }
