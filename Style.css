@@ -119,16 +119,13 @@ body{
 
 .cuerpo-contenido__biografia{
     display: flex;
-    /* justify-content: space-evenly; */
     margin-top: 3rem;
-    /* justify-content: space-between;*/
 }
 
 .cuerpo-contenido-biografia__contenido{
     display: flex;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 500px;
 }
 
 .cuerpo-contenido-biografia__forma{
@@ -140,7 +137,6 @@ body{
     padding-left: 3vw;
     padding-right: 20vw;
     z-index: 100;
-    margin-bottom: 2.3rem;
     margin-left: -8px;
     transition: .7s;
 }
@@ -149,17 +145,15 @@ body{
     height: 16.5rem;
 }
 
+
 .cuerpo-contenido-biografia__sombra{
+    width: 59.43vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
-    width: 59.90vw;
     height: 16rem;
     margin-bottom: 2.3rem;
-    margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
-    min-width: 508px;
-    transition: .7s;
 }
 
 .cuerpo-contenido-biografia-div__img{
@@ -238,7 +232,7 @@ body{
 .cuerpo-contenido-formacion__sombra{
     position: absolute;
     background-color: rgb(13, 70, 223);
-    width: 60.56vw;
+    width: 60.49vw;
     height: 16rem;
     margin-bottom: 2.3rem;
     margin-right: -8px;
@@ -279,7 +273,6 @@ body{
 
 
 .cuerpo-contenido__curriculum{
-    align-items:flex-end;
     display: flex;
     margin-top: 3rem;
 }
@@ -288,7 +281,7 @@ body{
     display: flex;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 600px;
+    min-width: 500px;
 }
 
 .cuerpo-contenido-curriculum__forma{
@@ -300,7 +293,6 @@ body{
     padding-left: 3vw;
     padding-right: 20vw;
     z-index: 100;
-    margin-bottom: 2.3rem;
     margin-left: -8px;
     transition: .7s;
 }
@@ -309,16 +301,15 @@ body{
     height: 16.5rem;
 }
 
+
 .cuerpo-contenido-curriculum__sombra{
+    width: 59.43vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
-    width: 59.90vw;
     height: 16rem;
     margin-bottom: 2.3rem;
-    margin-left: -8px;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
-    min-width: 608px;
 }
 
 .cuerpo-biografia-curriculum-div__img{
@@ -382,7 +373,7 @@ body{
 .cuerpo-contenido-pasatiempo__sombra{
     position: absolute;
     background-color: rgb(13, 70, 223);
-    width: 60.56vw;
+    width: 60.49vw;
     height: 16rem;
     margin-bottom: 2.3rem;
     margin-right: -8px;
