@@ -1,21 +1,18 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(rgb(39, 44, 53), rgb(12, 14, 18));
     color: rgb(112, 112, 112);
 }
 
-.sub-titulo-h3{
-    font-size: 1.7rem;
-    margin-top: 1rem;
-}
 
 
 
-
+/*CSS de la barra de navegación*/
 
 .barra{
     position: relative;
-    width: 100.7%;
+    width: 100.45%;
     height: 4.375rem;
     background-color: rgb(12, 14, 18);
     align-items: center;
@@ -100,22 +97,17 @@ body{
 }
 
 
-/* .barra-izquierda__menu{
-    margin-left: 20px;
-    cursor: pointer;
-} */
+
+
+
+
+/*Aquí se especifica por partes lo que hay en el contenido. Llámese la biografía, Formación, etc.*/
 
 
 
 
 
-
-
-
-
-
-
-
+/*Sección de la biografía*/
 
 .cuerpo-contenido__biografia{
     display: flex;
@@ -154,6 +146,7 @@ body{
     margin-bottom: 2.3rem;
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: 90;
+    
 }
 
 .cuerpo-contenido-biografia-div__img{
@@ -193,7 +186,7 @@ body{
 
 
 
-
+/*Sección de la formación acádemica*/
 
 .cuerpo-contenido__formacion{
     justify-content: flex-end;
@@ -271,6 +264,7 @@ body{
 
 
 
+/*Sección del currículum*/
 
 .cuerpo-contenido__curriculum{
     display: flex;
@@ -336,6 +330,8 @@ body{
 
 
 
+
+/*Sección de los pasatiempos*/
 
 .cuerpo-contenido__pasatiempo{
     justify-content: flex-end;
@@ -410,7 +406,7 @@ body{
 
 
 
-
+/*Esto es parte del código CSS que afecta a todas las secciones del contenido. Algunos elementos y detalles de estilo*/
 
 .formas-todo{
     margin-bottom: 4rem;
@@ -427,10 +423,17 @@ body{
     font-size: 0.9rem;
 }
 
+.sub-titulo-h3{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
 
 
 
 
+
+
+/*Estilo del pie de la página*/
 
 .pie{
     height: 10rem;
@@ -459,4 +462,73 @@ body{
 
 .link-contacto a{
     color:rgb(112, 112, 112);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1111px) { 
+
+    /*Contenido de la derecha: Biografía y currículum*/
+    .todo-contenido__derecha{
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    .contenido-derecha{
+        width: 100%;
+    }
+
+    .forma-derecha{
+        padding-right: 20rem;
+    }
+
+    .sombra-derecha{
+        width: 98.6%;
+    }
+
+    .div-img__derecha{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-derecha{
+        width: 600px;
+        margin: 20px;
+    }
+
+
+
+
+
+    /*Contenido de la izquierda: Formación y pasatiempo*/
+    .todo-contenido__izquierda{
+
+        flex-wrap: wrap-reverse;
+        height: 700px;
+    }
+
+    .contenido-izquierda{
+        width: 100%;
+    }
+
+    .forma-izquierda{
+        padding-left: 20rem;
+    }
+
+    .sombra-izquierda{
+        width: 99.3%;
+    }
+
+    .div-img__izquierda{
+        margin-right: -10px;
+        width: 105%;
+        position: static;
+    }
+
 }
