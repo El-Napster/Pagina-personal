@@ -165,7 +165,7 @@ body{
 
 
 .cuerpo-contenido-biografia__sombra{
-    width: 59.43vw;
+    width: 58.9vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
@@ -322,7 +322,7 @@ body{
 
 
 .cuerpo-contenido-curriculum__sombra{
-    width: 59.43vw;
+    width: 58.9vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
@@ -604,6 +604,11 @@ body{
 
 @media screen and (max-width: 900px) { 
 
+    header{
+        position: fixed;
+        z-index: 500;
+
+    }
 
     .barra{
         width: 100vw;
@@ -697,6 +702,25 @@ body{
 */
 
 @media screen and (max-width: 660px) { 
+    header{
+        position: fixed;
+        z-index: 500;
+    }
+
+    .barra-centro__nombre{
+        font-size: 25px;
+    }
+
+    .sombra-derecha{
+        width: 97.1%;
+
+    }
+
+
+    .cuerpo__contenido{
+        margin-top: 150px;
+    }
+
     .pie__contenido{
         display: block;
     }
@@ -710,8 +734,12 @@ body{
     }
 
     .forma-izquierda{
-        padding-left: 11rem;
+        padding-left: 12rem;
     }
 
 }
 
+
+@media screen and (max-width:510px){
+    
+}
