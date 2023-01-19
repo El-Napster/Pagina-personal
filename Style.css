@@ -44,51 +44,59 @@ body{
   }
   
   
-
-.barra__izquierda{
+/*Centro*/
+.barra__centro{
+    position: absolute;
+    margin-left: 6rem;
     display: flex;
     align-items: center;
-    width: 50vw;
+    width: 400px;
     height: 4.375rem;
-    margin: 0;
-    margin-left: 2rem;
 }
 
-.barra-izquierda__nombre{
+.barra-centro__nombre{
     font-size: 30px;
     min-width: 200px;
     margin: 0;
 }
-.barra-izquierda__link{
+.barra-centro__link{
     color:rgb(112, 112, 112);
 }
 
 
-
+/*Derecha*/
 .barra__opciones{
-    margin-right: -50px;
+    height: 4.375rem;
+    margin-right: 30px;
     width: 30vw;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+}
+
+.barra__opciones ul li {
+    list-style: none;
+}
+
+.barra__opciones ul{
+    display: flex;
 }
 
 .barra__opciones a{
     color:rgb(112, 112, 112);
     margin-left: 1.5vw;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 
-
-.barra__derecha{
-    width: 20vw;
-    display: flex;
-    margin-right: 10px;
-    width: 5vw;
+/*Izquierda*/
+.barra__izquierda{
+    margin-left: 20px;
+    width: 10vw;
 }
-
 
 .perfil__img{
+    border: 2px solid rgb(13, 70, 223);
     align-items: center;
     width: 3.3rem;
     height: 3.3rem;
@@ -98,6 +106,24 @@ body{
 
 
 
+/*Barra de menú para celulares*/
+
+
+.menu-responsive{
+    display: none;
+    float: right;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    color:  rgb(13, 70, 223);
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
 
 
 
@@ -111,7 +137,7 @@ body{
 
 .cuerpo-contenido__biografia{
     display: flex;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .cuerpo-contenido-biografia__contenido{
@@ -191,7 +217,6 @@ body{
 .cuerpo-contenido__formacion{
     justify-content: flex-end;
     display: flex;
-    flex-wrap: wrap;
     margin-top: 5rem;
 }
 
@@ -471,7 +496,22 @@ body{
 
 
 
+
+
+
+
+
+
+/*
+/* Responsive de la página principal, pero solo de los elementos en el contenido.
+/* Mas para abajo se arregla el menú y otras pantallas más pequeñas
+*/
+
 @media screen and (max-width: 1111px) { 
+
+    .barra__derecha{
+        margin-right: 20px;
+    }
 
     /*Contenido de la derecha: Biografía y currículum*/
     .todo-contenido__derecha{
@@ -503,6 +543,9 @@ body{
     }
 
 
+    .cuerpo-biografia-curriculum-__img{
+        margin-bottom: 200px;
+    }
 
 
 
@@ -532,3 +575,143 @@ body{
     }
 
 }
+
+
+
+/*
+/* Se elimina el icono del perfil
+*/
+
+@media screen and (max-width: 1000px) { 
+    .barra__izquierda{
+        visibility: hidden;
+    }
+
+    .barra__centro{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+/*
+/* Responsive del menú. Aún sujeta a cambios para pantallas más pequeñas
+*/
+
+
+@media screen and (max-width: 900px) { 
+
+
+    .barra{
+        width: 100vw;
+        top: 0.45rem;
+        right: 0.2rem;
+        position:fixed;
+    }
+
+    .barra-sombra{
+        right: 0;
+        top: 4.36rem;
+        position:fixed;
+    }
+
+    .cuerpo__contenido{
+        margin-top: 6rem;
+    }
+
+
+    
+    .barra__centro{
+        margin-left: 90px;
+    }
+    .barra__izquierda{
+        visibility: visible;
+    }
+
+    .menu-responsive{
+        margin-right: 10px;
+        width: 40px;
+        display: block;
+    }
+    .checkbtn{
+        display: inline;
+    }
+
+    .barra__opciones{
+        align-items: flex-start;
+        position: fixed;
+        top: 4.5rem;
+        height: 200vh;
+        left: -110%;
+        width: 101%;
+        background-color: rgb(12, 14, 18);
+        text-align: right;
+        transition: all .5s;
+        z-index: 500;
+        
+    }
+
+    .barra__opciones ul{
+        position:fixed;
+        margin: 60px;
+        display: block;
+    }
+
+    .barra__opciones ul li {
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        border: 2px solid rgb(13, 70, 223);
+        margin-bottom: 30px;
+        transition: all .3s;
+    }
+
+    .barra__opciones ul li:hover {
+        background-color: rgb(13, 70, 223);
+    }
+
+
+
+    #check:checked ~ .barra__opciones{
+        left: 0%;        
+    } 
+
+    #check:checked ~ article {
+        visibility: hidden;
+    }
+
+}
+
+
+
+
+
+
+/*
+/* Responsive del footer
+*/
+
+@media screen and (max-width: 660px) { 
+    .pie__contenido{
+        display: block;
+    }
+
+    .links{
+        margin-left: 10px;
+    }
+
+    .forma-derecha{
+        padding-right: 11rem;
+    }
+
+    .forma-izquierda{
+        padding-left: 11rem;
+    }
+
+}
+

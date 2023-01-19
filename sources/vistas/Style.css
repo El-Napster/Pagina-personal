@@ -10,9 +10,11 @@ body{
 
 
 
+/*CSS de la barra de navegación*/
+
 .barra{
     position: relative;
-    width: 100.7%;
+    width: 100.45%;
     height: 4.375rem;
     background-color: rgb(12, 14, 18);
     align-items: center;
@@ -44,31 +46,33 @@ body{
   }
   
   
-
-.barra__izquierda{
+/*Centro*/
+.barra__centro{
+    position: absolute;
+    margin-left: 6rem;
     display: flex;
     align-items: center;
-    width: 50vw;
+    width: 400px;
     height: 4.375rem;
-    margin: 0;
-    margin-left: 2rem;
 }
 
-.barra-izquierda__nombre{
+.barra-centro__nombre{
     font-size: 30px;
     min-width: 200px;
     margin: 0;
 }
-.barra-izquierda__link{
+.barra-centro__link{
     color:rgb(112, 112, 112);
 }
 
 
-
+/*Derecha*/
 .barra__opciones{
-    margin-right: -50px;
+    height: 4.375rem;
+    margin-right: 30px;
     width: 30vw;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -79,31 +83,20 @@ body{
 }
 
 
-
-.barra__derecha{
-    width: 20vw;
-    display: flex;
-    margin-right: 10px;
-    width: 5vw;
+/*Izquierda*/
+.barra__izquierda{
+    margin-left: 20px;
+    width: 10vw;
 }
 
-
 .perfil__img{
+    border: 2px solid rgb(13, 70, 223);
     align-items: center;
     width: 3.3rem;
     height: 3.3rem;
     border-radius: 50% ;
     object-fit: cover;
 }
-
-
-/* .barra-izquierda__menu{
-    margin-left: 20px;
-    cursor: pointer;
-} */
-
-
-
 
 
 
