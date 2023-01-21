@@ -6,22 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="Style.css">
     <link rel="icon" href="../img/perfil.icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Biografia</title>
 </head>
 <body>
     <header class="header">
         <div class="barra">
-            <!-- <div class="barra__izquierda">
-                <div class="barra-izquierda__menu ">
-                    <svg style="color:  rgb(13, 70, 223)" height="40px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" fill="rgb(13, 70, 223)"></path>
-                    </svg>
-                </div>
-            </div> -->
             <div class="barra__izquierda">
-                <div class="barra-derecha__perfil">
-                    <a href="../../Index.html"><img src="../img/perfil.icon" alt="Leandro Reynoso A." title="Página principal" class="perfil__img img"></a>
-                </div>
+                <a href="../../Index.html"><img src="../img/perfil.icon" alt="Leandro Reynoso A." title="Página principal" class="perfil__img img"></a>
             </div>
 
             <div class="barra__centro">
@@ -29,16 +21,23 @@
             </div>
             
             <div class="barra__opciones">
-                <a href="../vistas/Biografia.html" class="barra-opciones__biografia">Biografía</a>
-                <a href="../vistas/Formacion.html" class="barra-opciones__formacion">Formación</a>
-                <a href="../vistas/Curriculum.html" class="barra-opciones__curriculum">Currículum</a>
-                <a href="https://github.com/El-Napster" class="barra-opciones__github" target="_blank">GitHub</a>
-            </div>                
-            
+                <ul>
+                    <li><a href="../vistas/Biografia.html" class="barra-opciones__biografia link-opciones">Biografía</a></li>
+                    <li><a href="../vistas/Formacion.html" class="barra-opciones__formacion link-opciones">Formación</a></li>
+                    <li><a href="../vistas/Curriculum.html" class="barra-opciones__curriculum link-opciones">Currículum</a></li>
+                    <li><a href="https://github.com/El-Napster" class="barra-opciones__github link-opciones" target="_blank">GitHub</a></li>
+                </ul>
+            </div>  
+
+            <div class="menu-responsive">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
         </div>
         <div class="barra-sombra"></div>
     </header>
-
 
         <section class="cuerpo">
             <div class="Cuerpo__contenido">
@@ -48,7 +47,7 @@
                 </div>
                 
                 <div class="cuerpo-contenido__texto">
-                    <img src="../img/pasatiempo-page1.png" alt="" class="cuerpo-contenido-texto__img img">
+                    <img src="../img/pasatiempo-page1.png" alt="" class="cuerpo-contenido-texto__img img img-contenido">
                     <p class="parrafo_1 parrafo">
                         Bueno, esta vez no me enfocaré en la historia detrás de lo que hago, sino los porqués de estos. Empezamos con mi pasatiempo más antiguo, y ya que es hasta talento, el cual es dibujar.
                         Desde que tengp 12, se despertó en mi ese sentimiento de gastar horas y horas enfocado en eso. Dedicaba cuadernos completos a solo el hecho de copiar cartoons. 
@@ -63,14 +62,14 @@
                         Bueno, eso es exactamente lo que se siente que te de calambres en la misma posición. Me encantaría dar más explicación pero no podría porque, aparte que no es un estado consciente como
                         para tratar de explicarlo, solo podrás entenderlo cuando encuentres eso que te haga olvidarte del mundo por un instante. Desconectarte. 
                     </p>
-                    <img src="../img/pasatiempo-page2.jpeg" alt="" title="" class="cuerpo-contenido-texto-centro__img img-contenido-pasatiempo">
+                    <img src="../img/pasatiempo-page2.jpeg" alt="" title="" class="cuerpo-contenido-texto-centro__img img-contenido-pasatiempo img-contenido">
                     <p class="img_pie">[yo dibujando en el 2019, el cual considero mi año de mayor crecimiento artístico]<i></i></p>
                     <p class="parrafo_4 parrafo-x">
                         A partir de ahí mis pasatiempos se extendierón al la fotografía casual. No estoy enteramente adentrado en fotografiar edificios, pero si veo uno en buena perspectiva,
                         trataría, sin duda, de sacar mi celular y hacerle una buena toma y aguardarla para mi mismo. Un día de lluvia, un amanecer o atardecer, una linda nube, hasta un simple perro.
                         Si es uno de esos momentos que merecen durar para siempre, ¿quien soy yo para no darle lo que se merece?
                     </p>
-                    <img src="../img/pasatiempo-page3.png" alt="" title="" class="cuerpo-contenido-texto-centro__img img-contenido-pasatiempo">
+                    <img src="../img/pasatiempo-page3.png" alt="" title="" class="cuerpo-contenido-texto-centro__img img-contenido-pasatiempo img-contenido">
                     <p class="img_pie">[Solo unpar de fotos ocacionales]<i></i></p>
                     <p class="parrafo_5 parrafo">
                         Por último, y no menos importante, mi pasatiempo es el deporte, arquería específicamente. Desde que era niño estuve interesado en la materia. Supongo que siempre supe que no
@@ -83,7 +82,7 @@
                         desde entonces estamos practicándolo como si vivieramos de ello y así esperamos que sea algún día. Se me dió la oprtunidad de ganar medallas y conocer a personas asombrosas allí,
                         incluyendo a nuestros nos entrenadores, Adrienne y Daniel. aún sigo en le área y prácticando con la mira puesta en la luna.
                     </p>
-                    <img src="../img/pasatiempo-page4.jpg" alt="" title="" class="cuerpo-contenido-texto-centro__img img-contenido-pasatiempo">
+                    <img src="../img/pasatiempo-page4.jpg" alt="" title="" class="cuerpo-contenido-texto-centro__img img-contenido-pasatiempo img-contenido">
                     <p class="img_pie">[Foto ella para la página de arquería de @Unapec_Archery]<i></i></p>
                     <p class="parrafo_7 parrafo">
                         Hasta este punto ya me conoces bastante. Se dice que "eres tus hábitos" y aquí están un par de los que me definen.

@@ -6,22 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="Style.css">
     <link rel="icon" href="../img/perfil.icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Biografia</title>
 </head>
 <body>
     <header class="header">
         <div class="barra">
-            <!-- <div class="barra__izquierda">
-                <div class="barra-izquierda__menu ">
-                    <svg style="color:  rgb(13, 70, 223)" height="40px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" fill="rgb(13, 70, 223)"></path>
-                    </svg>
-                </div>
-            </div> -->
             <div class="barra__izquierda">
-                <div class="barra-derecha__perfil">
-                    <a href="../../Index.html"><img src="../img/perfil.icon" alt="Leandro Reynoso A." title="Página principal" class="perfil__img img"></a>
-                </div>
+                <a href="../../Index.html"><img src="../img/perfil.icon" alt="Leandro Reynoso A." title="Página principal" class="perfil__img img"></a>
             </div>
 
             <div class="barra__centro">
@@ -29,12 +21,20 @@
             </div>
             
             <div class="barra__opciones">
-                <a href="../vistas/Biografia.html" class="barra-opciones__biografia">Biografía</a>
-                <a href="../vistas/Formacion.html" class="barra-opciones__formacion">Formación</a>
-                <a href="../vistas/Pasatiempo.html" class="barra-opciones__pasatiempo">Pasatiempos</a>
-                <a href="https://github.com/El-Napster" class="barra-opciones__github" target="_blank">GitHub</a>
-            </div>                
-            
+                <ul>
+                    <li><a href="../vistas/Biografia.html" class="barra-opciones__biografia link-opciones">Biografía</a></li>
+                    <li><a href="../vistas/Formacion.html" class="barra-opciones__formacion link-opciones">Formación</a></li>
+                    <li><a href="../vistas/Pasatiempo.html" class="barra-opciones__pasatiempo link-opciones">Pasatiempos</a></li>
+                    <li><a href="https://github.com/El-Napster" class="barra-opciones__github link-opciones" target="_blank">GitHub</a></li>
+                </ul>
+            </div>  
+
+            <div class="menu-responsive">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
         </div>
         <div class="barra-sombra"></div>
     </header>
@@ -47,7 +47,7 @@
                     <h2 class="cuerpo-contenido-cabeza__h2"><i>All work and no play makes Jack a dull boy</i></h2>
                 </div>
                 
-                <div class="cuerpo-contenido__texto">
+                <div class="cuerpo-contenido__texto .parrafo">
                     <!-- <img src="" alt="" class="cuerpo-contenido-texto__img img"> -->
                     <p class="parrafo_1 parrafo">
                         <h2>Sobre mi:</h2>
@@ -58,7 +58,7 @@
                     </p>
                     
                     <ul>
-                        <li class="secciones-li">
+                        <li class="secciones-li parrafo">
                                 <h3>Idiomas</h3>
                                 <ul>
                                     <li>Español: nativo.</li>
@@ -66,18 +66,18 @@
                                 </ul>
                         </li>
 
-                        <li class="secciones-li">
+                        <li class="secciones-li parrafo">
                                 <h3>Experiencias</h3>
-                                <div class="parrafo3_experiencias">
+                                <div class="parrafo3_experiencias parrafo">
                                     <h4>Uver Photoart:</h4>
                                     <p>Durante 5 años me especialicé en la fotografía en el uso de cámaras profesionales y la edición de fotografía a través de los programas de Adobe.</p>
                                 </div>
-                                <div class="parrafo3_experiencias">
+                                <div class="parrafo3_experiencias parrafo">
                                     <h4>Proyectos personales y académicos:</h4>
                                     <p>Experiencias en la realización de proyectos personales, con fines educativos, en windows forms C#, ASP.NET core MVC, Desarrollo web (HTML/CSS), ect.</p>
                                 </div>
                         </li>
-                        <li class="secciones-li">
+                        <li class="secciones-li parrafo ">
                                 <h3>Habilidades blandas:</h3>
                                 <ul>
                                     <li>Trabajo en equipo.</li>
@@ -88,9 +88,9 @@
                                     <li>Comunicación asertiva</li>
                                 </ul>
                         </li>
-                        <li class="secciones-li habilidades-tecnicas">
-                                <h3>Habilidades técnicas:</h3>
-                                <div class="habilidades-tecnicas__div">
+                        <li class="secciones-li habilidades-tecnicas parrafo">
+                                <h3 class="parrafo">Habilidades técnicas:</h3>
+                                <div class="habilidades-tecnicas__div parrafo">
                                     <ul>
                                         <li>Adobe Photoshop _________________ 9/10</li>
                                         <li>Adobe Lightroom __________________ 6/10</li>
@@ -101,7 +101,7 @@
                                     </ul>                                    
                                 </div>                                
                         </li>
-                        <li class="secciones-li">
+                        <li class="secciones-li parrafo">
                             <h3>Certificaciones</h3>
                             <p><b>Técnico en contabilidad</b>: Politécnico promapec</p>
                             <p><b>Manejo de programás de Office</b>: INFOTEP</p>
@@ -110,8 +110,8 @@
                     <!-- <a href="" target="_blank" class="img-link"><img src="" alt="" title="" class="cuerpo-contenido-texto-centro__img"></a> 
                     <p class="img_pie"><i></i></p>-->
                 </div>
-                <div class="secciones-li">
-                    <p>Aquí también tienes la opción de descargar el archivo PDF de mi curriculum: <a href="https://www.icloud.com/iclouddrive/0c9vBGYqTZw63wq36AS6Iye5A" target="_blank" class="link-referencia">Currículum</a>.</p>
+                <div class="secciones-li parrafo">
+                    <p>Aquí también tienes la opción de descargar el archivo PDF de mi curriculum: <a href="https://www.icloud.com/iclouddrive/0c9vBGYqTZw63wq36AS6Iye5A" target="_blank" class="link-referencia parrafo ">Currículum</a>.</p>
                 </div>
             </div>
         </section>

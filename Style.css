@@ -56,7 +56,6 @@ body{
 
 .barra-centro__nombre{
     font-size: 30px;
-    min-width: 200px;
     margin: 0;
 }
 .barra-centro__link{
@@ -116,7 +115,7 @@ body{
 
 #check{
     display: none;
-}
+} 
 
 .checkbtn{
     color:  rgb(13, 70, 223);
@@ -225,7 +224,6 @@ body{
     display: flex;
     justify-content: flex-end;
     width: 60vw;
-    min-width: 600px;
 }
 
 .cuerpo-contenido-formacion__forma{ 
@@ -256,7 +254,6 @@ body{
     margin-right: -8px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
     z-index: 90;
-    min-width: 608px;
 }
 
 
@@ -300,7 +297,6 @@ body{
     display: flex;
     justify-content: flex-start;
     width: 60vw;
-    min-width: 500px;
 }
 
 .cuerpo-contenido-curriculum__forma{
@@ -369,7 +365,6 @@ body{
     display: flex;
     justify-content: flex-end;
     width: 60vw;
-    min-width: 600px;
 }
 
 .cuerpo-contenido-pasatiempo__forma{ 
@@ -400,7 +395,6 @@ body{
     margin-right: -8px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
     z-index: 90;
-    min-width: 608px;
 }
 
 
@@ -605,6 +599,7 @@ body{
 @media screen and (max-width: 900px) { 
 
     header{
+        top: 0;
         position: fixed;
         z-index: 500;
 
@@ -614,13 +609,11 @@ body{
         width: 100vw;
         top: 0.45rem;
         right: 0.2rem;
-        position:fixed;
     }
 
     .barra-sombra{
         right: 0;
         top: 4.36rem;
-        position:fixed;
     }
 
     .cuerpo__contenido{
@@ -642,7 +635,7 @@ body{
         display: block;
     }
     .checkbtn{
-        display: inline;
+        display: block;
     }
 
     .barra__opciones{
@@ -650,12 +643,11 @@ body{
         position: fixed;
         top: 4.5rem;
         height: 200vh;
-        left: -110%;
+        left: 100%;
         width: 101%;
         background-color: rgb(12, 14, 18);
         text-align: right;
         transition: all .5s;
-        z-index: 500;
         
     }
 
@@ -665,40 +657,36 @@ body{
         display: block;
     }
 
+    .link-opciones{
+        font-size: 20px !important;
+    }
+
     .barra__opciones ul li {
         padding-right: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        padding-top: 15px;
         height: 40px;
-        border: 2px solid rgb(13, 70, 223);
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right,  rgb(12, 14, 18), rgb(13, 70, 223)) 1;
         margin-bottom: 30px;
-        transition: all .3s;
+        transition: all .5s;
     }
 
-    .barra__opciones ul li:hover {
-        background-color: rgb(13, 70, 223);
+    .barra__opciones ul li:hover{
+        background: linear-gradient(to right,  rgb(12, 14, 18), rgb(13, 70, 223));
     }
-
 
 
     #check:checked ~ .barra__opciones{
-        left: 0%;        
-    } 
-
-    #check:checked ~ article {
-        visibility: hidden;
-    }
+        left: 0% ;        
+    }     
 
 }
 
 
 
-
-
-
 /*
-/* Responsive del footer
+/* Responsive del footer y las sombras/formas
 */
 
 @media screen and (max-width: 660px) { 
@@ -707,26 +695,8 @@ body{
         z-index: 500;
     }
 
-    .barra-centro__nombre{
-        font-size: 25px;
-    }
-
-    .sombra-derecha{
-        width: 97.1%;
-
-    }
-
-
-    .cuerpo__contenido{
-        margin-top: 150px;
-    }
-
-    .pie__contenido{
-        display: block;
-    }
-
-    .links{
-        margin-left: 10px;
+     .barra-centro__nombre{
+        font-size: 4.7vw;
     }
 
     .forma-derecha{
@@ -737,9 +707,86 @@ body{
         padding-left: 12rem;
     }
 
+
+    .sombra-derecha{
+        width: 97.1%;
+
+    }
+
+    .cuerpo__contenido{
+        margin-top: 150px;
+    }
+
+
+
+
+
+    .pie__contenido{
+        font-size: 15px;
+        display: flex;
+        width: 100vw;
+        margin-left: 60px;
+    }
+
+    .links{
+        margin-left: 0px;
+    }
+
 }
 
 
-@media screen and (max-width:510px){
-     
+/* Más responsive
+*/
+
+@media screen and (max-width: 550px) {
+    .forma-derecha{
+        padding-right: 0rem;
+    }
+
+    .forma-izquierda{
+        padding-left: 0rem;
+    }
+    .cuerpo-contenido__biografia{
+        
+        margin-bottom: -5rem;
+    }
+
+    .texto-biografia, .texto-curriculum, .ver_mas-derecha {
+        font-size: 13px;
+        padding-right: 9rem;
+    }
+
+    .texto-formacion, .texto-pasatiempo, .ver_mas-izquierda{
+        font-size: 13px;
+        padding-left: 9rem;
+    }
+
+    .sub-titulo-h3, .nombre-titulo{
+        margin-top: -15px;
+    }
+
+    .pie__contenido{
+        font-size: 12px;
+        display: flex;
+        margin-left: 40px;
+    }
+
+}
+
+/* Más responsive
+*/
+
+@media screen and (max-width: 414px) {
+    .cuerpo-contenido__biografia{
+        margin-top: -5rem;
+    }
+
+    .nombre-titulo{
+        display: inline;
+
+    }
+
+    .formas-todo, .cuerpo-contenido__biografia{
+        margin-bottom: -5rem;
+    }
 }

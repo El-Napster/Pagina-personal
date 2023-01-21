@@ -6,22 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="Style.css">
     <link rel="icon" href="../img/perfil.icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Biografia</title>
 </head>
 <body>
     <header class="header">
         <div class="barra">
-            <!-- <div class="barra__izquierda">
-                <div class="barra-izquierda__menu ">
-                    <svg style="color:  rgb(13, 70, 223)" height="40px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" fill="rgb(13, 70, 223)"></path>
-                    </svg>
-                </div>
-            </div> -->
             <div class="barra__izquierda">
-                <div class="barra-derecha__perfil">
-                    <a href="../../Index.html"><img src="../img/perfil.icon" alt="Leandro Reynoso A." title="Página principal" class="perfil__img img"></a>
-                </div>
+                <a href="../../Index.html"><img src="..//img/perfil.icon" alt="Leandro Reynoso A." title="Página principal" class="perfil__img img"></a>
             </div>
 
             <div class="barra__centro">
@@ -29,12 +21,20 @@
             </div>
             
             <div class="barra__opciones">
-                <a href="../vistas/Biografia.html" class="barra-opciones__biografia">Biografía</a>
-                <a href="../vistas/Curriculum.html" class="barra-opciones__curriculum">Currículum</a>
-                <a href="../vistas/Pasatiempo.html" class="barra-opciones__pasatiempo">Pasatiempos</a>
-                <a href="https://github.com/El-Napster" class="barra-opciones__github" target="_blank">GitHub</a>
-            </div>                
-            
+                <ul>
+                    <li><a href="../vistas/Biografia.html" class="barra-opciones__biografia link-opciones">Biografía</a></li>
+                    <li><a href="../vistas/Curriculum.html" class="barra-opciones__curriculum link-opciones">Currículum</a></li>
+                    <li><a href="../vistas/Pasatiempo.html" class="barra-opciones__pasatiempo link-opciones">Pasatiempos</a></li>
+                    <li><a href="https://github.com/El-Napster" class="barra-opciones__github link-opciones" target="_blank">GitHub</a></li>
+                </ul>
+            </div>  
+
+            <div class="menu-responsive">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
         </div>
         <div class="barra-sombra"></div>
     </header>
@@ -48,7 +48,7 @@
             </div>
             
             <div class="cuerpo-contenido__texto">
-                <img src="../img/Formacion-page.jpg" alt="Graduación-Leandro Reynoso" title="Leandro Reynoso" class="cuerpo-contenido-texto__img img">
+                <img src="../img/Formacion-page.jpg" alt="Graduación-Leandro Reynoso" title="Leandro Reynoso" class="cuerpo-contenido-texto__img img img-contenid">
                 <p class="parrafo_1 parrafo">
                     Luego de salir del jardín de niños, a mis tres años fui inscrito en la "Escuela Básica Guanuma". A partir de eso gasté los siguientes 10 años, en dicha escuela; La razón por al que estuve un años más de lo habitual -Desde 2019 hacia atrás,
                     en República Dominicana la primaria era desde preescolar, lo cual no cuenta como un año de estudio, luego primero de primaria hastra octavo (8vo) de primaria, lo que haría un total de 9 años de primaria- es porque fui inscrito desde muy temprano.
@@ -63,11 +63,11 @@
                 <p class="parrafo_3 parrafo">
                     Al cabo de cumplir lo establecido para terminar la primaria, mi madre me sugirió inscribirme en un politécnico cercano, a unos 8 km de la localidad donde vivía. Me estuvo comentando sobre la probabilidad de conseguir una beca y eso me motivó.
                     A mediadios del 2015 me inscribo en el Politécnico Promapec, una extensión de APEC, donde estuve hasta el 2019. En este tiempo, en 2017, participé en diferentes olimpiadas como lo fueron las olimpiadas de ajedréz, química y matemáticas.
-                    un año después inicio en el técnico de contabilidad, donde me gradué con notas sobresalientes. En el mismo año, a inicios, me inscribo en un curso de INFOTEP (impartido en el politécnico de los guaricanos San Valero)
+                    un año después inicio en el técnico de contabilidad, donde me gradué con notas sobresalientes. En el mismo año, a inicios, me inscribo en un curso de INFOTEP (impartido en el politécnico de los guaricanos Aragón)
                     sobre manejo de programas de oficina (Office 365) el cual concluyo el mismo año. 
                 </p>
-                <img src="../img/Formacion-page2.png" alt="Politécnico San Valero" title="Politécnico San Valero" class="cuerpo-contenido-texto-centro__img">
-                <p class="img_pie"><i>[Politécnico San Valero]</i></p>
+                <a href="https://goo.gl/maps/dXTE4Sc1fhRMd2C4A" target="_blank"><img src="../img/Formacion-page2.png" alt="Politécnico Aragón" title="Politécnico Aragón" class="cuerpo-contenido-texto-centro__img img-contenido"></a>
+                <p class="img_pie"><i>[Politécnico Aragón]</i></p>
 
                 <p class="parrafo_4 parrafo parrafo-x">
                     Al concluir la secundaria, luego de haberme graduado con honores, y medalla al esfuerzo, obtuve una beca completa para la universidad UNAPEC, en la cual resido tomando la carrera de ingeniería de software.

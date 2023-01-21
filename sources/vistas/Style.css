@@ -58,7 +58,6 @@ body{
 
 .barra-centro__nombre{
     font-size: 30px;
-    min-width: 200px;
     margin: 0;
 }
 .barra-centro__link{
@@ -69,6 +68,7 @@ body{
 /*Derecha*/
 .barra__opciones{
     height: 4.375rem;
+    margin-top: -20px;
     margin-right: 30px;
     width: 30vw;
     display: flex;
@@ -76,10 +76,18 @@ body{
     justify-content: flex-end;
 }
 
+.barra__opciones ul li {
+    list-style: none;
+}
+
+.barra__opciones ul{
+    display: flex;
+}
+
 .barra__opciones a{
     color: rgb(180, 180, 180);;
     margin-left: 1.5vw;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 
@@ -101,7 +109,30 @@ body{
 
 
 
+/*Barra de menú para celulares*/
 
+
+.menu-responsive{
+    display: none;
+    float: right;
+}
+
+#check{
+    display: none;
+} 
+
+.checkbtn{
+    color:  rgb(13, 70, 223);
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Aquí se especifica por partes lo que hay en el contenido. Llámese la biografía, Formación, etc.*/
 
 
 
@@ -222,4 +253,307 @@ li{
 
 .link-contacto a{
     color: rgb(180, 180, 180);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+/* Responsive de la página principal, pero solo de los elementos en el contenido.
+/* Mas para abajo se arregla el menú y otras pantallas más pequeñas
+*/
+
+/*
+/* Se elimina el icono del perfil
+*/
+
+@media screen and (max-width: 1000px) { 
+    .barra__izquierda{
+        visibility: hidden;
+    }
+
+    .barra__centro{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/*
+/* Responsive del menú. Aún sujeta a cambios para pantallas más pequeñas
+*/
+
+
+@media screen and (max-width: 900px) { 
+
+    header{
+        top: 0;
+        position: fixed;
+        z-index: 500;
+
+    }
+
+    .barra{
+        width: 100vw;
+        top: 0.45rem;
+        right: 0.2rem;
+    }
+
+    .barra-sombra{
+        right: 0;
+        top: 4.36rem;
+    }
+    
+    .barra__centro{
+        margin-left: 90px;
+    }
+    .barra__izquierda{
+        visibility: visible;
+    }
+
+    .cuerpo-contenido__cabeza{
+        margin-top: 10rem;
+    }
+
+
+    .menu-responsive{
+        margin-right: 10px;
+        width: 40px;
+        display: block;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    .barra__opciones{
+        align-items: flex-start;
+        position: fixed;
+        top: 4.5rem;
+        height: 200vh;
+        left: 100%;
+        width: 101%;
+        background-color: rgb(12, 14, 18);
+        text-align: right;
+        transition: all .5s;
+        
+    }
+
+    .barra__opciones ul{
+        position:fixed;
+        margin: 60px;
+        display: block;
+    }
+
+    .link-opciones{
+        font-size: 20px !important;
+    }
+
+    .barra__opciones ul li {
+        padding-right: 10px;
+        display: block;
+        padding-top: 15px;
+        height: 40px;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right,  rgb(12, 14, 18), rgb(13, 70, 223)) 1;
+        margin-bottom: 30px;
+        transition: all .5s;
+    }
+
+    .barra__opciones ul li:hover{
+        background: linear-gradient(to right,  rgb(12, 14, 18), rgb(13, 70, 223));
+    }
+
+
+    #check:checked ~ .barra__opciones{
+        left: 0% ;        
+    }     
+
+
+
+
+    .cuerpo{
+        margin: 4rem auto;
+        width: 600px;
+    }
+
+    .parrafo{
+        font-size: 15px;
+    }
+
+    .img_pie{
+        font-size: 10px;
+    }
+
+    .cuerpo-contenido-texto__img{
+        width: 300px;
+    }
+    .img-contenido{
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+/*
+/* Responsive del footer y las sombras/formas
+*/
+
+@media screen and (max-width: 660px) { 
+    header{
+        position: fixed;
+        z-index: 500;
+    }
+
+     .barra-centro__nombre{
+        font-size: 4.6vw;
+    }
+
+
+
+
+    .cuerpo-contenido-cabeza__h1{
+        font-size: 50px;
+    }
+
+    .cuerpo-contenido-cabeza__h2{
+        font-size: 20px;
+    }
+
+    .cuerpo{
+        margin: 10rem auto;
+        width: 500px;
+    }
+
+    .parrafo{
+        font-size: 15px;
+    }
+
+    .img_pie{
+        font-size: 10px;
+    }
+    
+
+    .cuerpo-contenido-texto__img{
+        width: 250px;
+    }
+    .img-contenido{
+        width: 100%;
+    }
+
+
+
+
+
+    .pie__contenido{
+        font-size: 15px;
+        display: flex;
+        width: 100vw;
+        margin-left: 60px;
+    }
+
+    .links{
+        margin-left: 0px;
+    }
+
+}
+
+
+/* Más responsive
+*/
+
+@media screen and (max-width: 550px) {
+    .sub-titulo-h3, .nombre-titulo{
+        margin-top: -15px;
+    }
+
+    .pie__contenido{
+        font-size: 12px;
+        display: flex;
+        margin-left: 40px;
+    }
+
+
+
+    .cuerpo-contenido-cabeza__h1{
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .cuerpo-contenido-cabeza__h2{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .cuerpo{
+        margin: 10rem auto;
+        width: 400px;
+    }
+
+    .parrafo{
+        font-size: 13px;
+    }
+    .img_pie{
+        font-size: 8px;
+    }
+
+    .cuerpo-contenido-texto__img{
+        width: 200px;
+    }
+
+
+}
+
+/* Más responsive
+*/
+
+@media screen and (max-width: 414px) {
+
+
+    .nombre-titulo{
+        display: inline;
+
+    }
+
+
+    .cuerpo-contenido-cabeza__h1{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .cuerpo-contenido-cabeza__h2{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .cuerpo{
+        margin: 10rem auto;
+        width: 350px;
+    }
+
+
+    .cuerpo-contenido-texto__img{
+        width: 170px;
+    }
+
+
+
 }
