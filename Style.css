@@ -172,8 +172,7 @@ body{
 
 
 .cuerpo-contenido-biografia__sombra{
-    margin-left: 0;
-    width: 59.42vw;
+    width: 58.9vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
@@ -327,8 +326,7 @@ body{
 
 
 .cuerpo-contenido-curriculum__sombra{
-    margin-left: 0;
-    width: 59.42vw;
+    width: 58.9vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
