@@ -107,22 +107,30 @@ body{
 
 /*Barra de menú para celulares*/
 
+.barra-opciones__principal{
+    display: none;
+}
 
 .menu-responsive{
+    margin-right: 10px;
+    margin-top: -40px;
+    width: 40px;
     display: none;
     float: right;
 }
 
-#check{
-    display: none;
-} 
-
 .checkbtn{
+    position: absolute;
     color:  rgb(13, 70, 223);
     font-size: 40px;
-    display: none;
     cursor: pointer;
 }
+
+
+
+
+
+
 
 
 
@@ -164,7 +172,8 @@ body{
 
 
 .cuerpo-contenido-biografia__sombra{
-    width: 58.9vw;
+    margin-left: 0;
+    width: 59.42vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
@@ -318,7 +327,8 @@ body{
 
 
 .cuerpo-contenido-curriculum__sombra{
-    width: 58.9vw;
+    margin-left: 0;
+    width: 59.42vw;
     position: absolute;
     background-color: rgb(13, 70, 223);
     height: 16rem;
@@ -629,58 +639,60 @@ body{
         visibility: visible;
     }
 
-    .menu-responsive{
-        margin-right: 10px;
-        width: 40px;
-        display: block;
-    }
-    .checkbtn{
-        display: block;
-    }
+    
+
+
+    /*Menú desplegable*/
 
     .barra__opciones{
-        align-items: flex-start;
-        position: fixed;
-        top: 4.5rem;
-        height: 200vh;
-        left: 100%;
-        width: 101%;
-        background-color: rgb(12, 14, 18);
-        text-align: right;
-        transition: all .5s;
-        
+        margin-right: -670px;
+        width: 130px;
+        z-index: 500;
+    }
+
+    .barra-opciones__principal{
+        display: inline;
     }
 
     .barra__opciones ul{
-        position:fixed;
-        margin: 60px;
         display: block;
+        align-items: flex-end;
+        position: fixed;
+        top: 3.5rem;
+        height: 200vh;
+        width: 100vw;
+        padding-top: 35px;
+        background-color: rgb(12, 14, 18);
+        text-align: right;
+        transition: all .5s ease-out;
+
+        margin-right: 200vw;
     }
 
-    .link-opciones{
-        font-size: 20px !important;
-    }
-
-    .barra__opciones ul li {
+    .barra__opciones ul li{
+        margin-right: 40px;
+        display: block;
+        padding: 15px 0;
         padding-right: 10px;
-        display: block;
-        padding-top: 15px;
-        height: 40px;
         border: 3px solid transparent;
         border-image: linear-gradient(to right,  rgb(12, 14, 18), rgb(13, 70, 223)) 1;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         transition: all .5s;
     }
 
     .barra__opciones ul li:hover{
         background: linear-gradient(to right,  rgb(12, 14, 18), rgb(13, 70, 223));
+        cursor: pointer;
+    }
+
+    .barra__opciones:hover ul{
+        margin-right: -10px;
     }
 
 
-    #check:checked ~ .barra__opciones{
-        left: 0% ;        
-    }     
-
+    .menu-responsive{
+        display: block;
+    }
 }
 
 
@@ -694,6 +706,15 @@ body{
         position: fixed;
         z-index: 500;
     }
+
+
+    .barra__opciones{
+        margin-right: -500px;
+        width: 140px;
+        z-index: 500;
+    }
+
+
 
      .barra-centro__nombre{
         font-size: 4.7vw;
@@ -739,6 +760,14 @@ body{
 */
 
 @media screen and (max-width: 550px) {
+
+
+    .barra__opciones{
+        margin-right: -400px;
+        width: 140px;
+        z-index: 500;
+    }
+
     .forma-derecha{
         padding-right: 0rem;
     }
@@ -777,6 +806,13 @@ body{
 */
 
 @media screen and (max-width: 414px) {
+
+    .barra__opciones{
+        margin-right: -270px;
+        width: 130px;
+        z-index: 500;
+    }
+
     .cuerpo-contenido__biografia{
         margin-top: -5rem;
     }
